@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingBottom="70dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.sign_up.SignUpFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="#5C5C5C"
+        android:text="@string/about_me"
+        android:paddingVertical="15dp"/>
+
+    <EditText
+        android:id="@+id/et_sign_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#818181"
+        android:hint="@string/username"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="textMultiLine|textCapSentences"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_sign_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#818181"
+        android:hint="@string/Age"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="number"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_sign_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#818181"
+        android:hint="@string/email"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="textMultiLine|textCapSentences"
+        tools:ignore="TextFields"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/et_sign_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#818181"
+        android:hint="@string/password"
+        android:layout_margin="10dp"
+        android:paddingHorizontal="10dp"
+        android:inputType="numberPassword"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add"/>
+
+</LinearLayout>
