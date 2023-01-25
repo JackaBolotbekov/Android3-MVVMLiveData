@@ -1,4 +1,4 @@
-package com.example.android3_mvvmlivedata.preferences
+package com.example.android3_mvvmlivedata.data.local.preferences
 
 import android.content.Context
 import android.content.SharedPreferences

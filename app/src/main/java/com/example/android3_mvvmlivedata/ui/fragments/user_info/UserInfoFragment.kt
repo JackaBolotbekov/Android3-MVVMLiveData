@@ -15,7 +15,7 @@ import com.example.android3_mvvmlivedata.databinding.FragmentMainBinding
 class UserInfoFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
-    private val viewModel by viewModels<UserInfoViewModel> ()
+    private val viewModel by viewModels<UserInfoViewModel>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,14 +31,15 @@ class UserInfoFragment : Fragment() {
     }
 
     private fun setUpListener() = with(binding) {
+        viewModel.getUserInfo()
+        viewModel.userLiveData.observe(viewLifecycleOwner){ info ->
+            tvUsername.text = info.username
+            tvAge.text = info.age.toString()
+            tvEmail.text = info.email
+            tvPassword.text = info.password
+        }
         fabUpdate.setOnClickListener{
             findNavController().navigate(R.id.action_mainFragment_to_updateFragment)
         }
-        findNavController().navigateUp()
-//        fabUpdate.setOnClickListener{
-//            viewModel.getUserInfo().observe(viewLifecycleOwner) {user ->
-//                Toast.makeText(requireContext(), "$user", Toast.LENGTH_SHORT).show()
-//            }
-//        }
     }
 }

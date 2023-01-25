@@ -6,7 +6,7 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import com.example.android3_mvvmlivedata.R
 import com.example.android3_mvvmlivedata.databinding.ActivityMainBinding
-import com.example.android3_mvvmlivedata.preferences.PreferenceHelperBoolean
+import com.example.android3_mvvmlivedata.data.local.preferences.PreferenceHelperBoolean
 
 class MainActivity : AppCompatActivity() {
 

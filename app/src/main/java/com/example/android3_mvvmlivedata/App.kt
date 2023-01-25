@@ -1,8 +1,8 @@
 package com.example.android3_mvvmlivedata
 
 import android.app.Application
-import com.example.android3_mvvmlivedata.preferences.PreferenceHelperBoolean
-import com.example.android3_mvvmlivedata.preferences.UserPreferenceHelper
+import com.example.android3_mvvmlivedata.data.local.preferences.PreferenceHelperBoolean
+import com.example.android3_mvvmlivedata.data.local.preferences.UserPreferenceHelper
 
 class App : Application() {
 
